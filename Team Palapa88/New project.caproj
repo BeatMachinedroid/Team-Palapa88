@@ -1,0 +1,1190 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1fdeeyxqu1a67</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Viktor Korsun" id="waterbg">Water background</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="bg" sid="347184649309385">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="938928565095547" speed="5">
+                    <frame duration="1" hotspotX="0.500142" hotspotY="0.500202" original-source="D:\GAME2021\aset\aset buton\bg1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.999716" y="0.000404694" />
+                            <point x="0.999716" y="0.999595" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BaliPuraUlunDanu" sid="868174786752663">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="14" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="946596424618202" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500298" original-source="D:\GAME2021\aset\aset icon\Bali - pura ulun danu.png">
+                        <collision-poly>
+                            <point x="0.367604" y="0.29601" />
+                            <point x="0.5" y="0.00119119" />
+                            <point x="0.630917" y="0.297201" />
+                            <point x="0.594675" y="0.499702" />
+                            <point x="0.99926" y="0.999404" />
+                            <point x="0.000739645" y="0.999404" />
+                            <point x="0.398669" y="0.499702" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500277" original-source="D:\GAME2021\aset\aset icon\Bengkulu - Tugu perjuangan.png">
+                        <collision-poly>
+                            <point x="0.419149" y="0.109262" />
+                            <point x="0.5" y="0" />
+                            <point x="0.576596" y="0.110372" />
+                            <point x="0.676596" y="0.499723" />
+                            <point x="0.997872" y="0.999445" />
+                            <point x="0.00212766" y="0.999445" />
+                            <point x="0.321277" y="0.499723" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500206" hotspotY="0.500356" original-source="D:\GAME2021\aset\aset icon\borobudur.png">
+                        <collision-poly>
+                            <point x="0.24084" y="0.416964" />
+                            <point x="0.499794" y="0.000712758" />
+                            <point x="0.75916" y="0.416964" />
+                            <point x="0.762865" y="0.499644" />
+                            <point x="0.99753" y="0.995723" />
+                            <point x="0.00164677" y="0.997149" />
+                            <point x="0.237135" y="0.499644" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500154" hotspotY="0.500442" original-source="D:\GAME2021\aset\aset icon\gedung sate.png">
+                        <collision-poly>
+                            <point x="0.499846" y="0.00530504" />
+                            <point x="0.886763" y="0.499558" />
+                            <point x="0.992903" y="0.979664" />
+                            <point x="0.499846" y="1" />
+                            <point x="0.00771367" y="0.977896" />
+                            <point x="0.117248" y="0.499558" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500285" original-source="D:\GAME2021\aset\aset icon\jam gadang.png">
+                        <collision-poly>
+                            <point x="0.149281" y="0.0472934" />
+                            <point x="0.5" y="0.000569801" />
+                            <point x="0.848921" y="0.0478632" />
+                            <point x="0.773381" y="0.499715" />
+                            <point x="0.998201" y="0.99943" />
+                            <point x="0.00179856" y="0.99943" />
+                            <point x="0.223022" y="0.499715" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500168" hotspotY="0.500358" original-source="D:\GAME2021\aset\aset icon\Jembatan ampera(new).png">
+                        <collision-poly>
+                            <point x="0.208347" y="0.443092" />
+                            <point x="0.499832" y="0.204724" />
+                            <point x="0.859643" y="0.298497" />
+                            <point x="0.920565" y="0.499642" />
+                            <point x="0.9172" y="0.823908" />
+                            <point x="0.139347" y="0.703651" />
+                            <point x="0.0339953" y="0.499642" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset icon\Kalbar - tugu khatulistiwa.png">
+                        <collision-poly>
+                            <point x="0.160995" y="0.133406" />
+                            <point x="0.5" y="0.0016269" />
+                            <point x="0.824607" y="0.145336" />
+                            <point x="0.626309" y="0.5" />
+                            <point x="0.999346" y="0.999458" />
+                            <point x="0.00196335" y="0.998373" />
+                            <point x="0.374346" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500322" hotspotY="0.5" original-source="D:\GAME2021\aset\aset icon\Kalsel bekantan.png">
+                        <collision-poly>
+                            <point x="0.181994" y="0.184005" />
+                            <point x="0.499678" y="0.0162549" />
+                            <point x="0.76463" y="0.237971" />
+                            <point x="0.956913" y="0.5" />
+                            <point x="0.841158" y="0.839402" />
+                            <point x="0.499678" y="1" />
+                            <point x="0.357556" y="0.638492" />
+                            <point x="0.401286" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500383" original-source="D:\GAME2021\aset\aset icon\maluku.png">
+                        <collision-poly>
+                            <point x="0.222689" y="0.243678" />
+                            <point x="0.5" y="0.035249" />
+                            <point x="0.797619" y="0.221456" />
+                            <point x="0.84874" y="0.499617" />
+                            <point x="0.9993" y="0.999234" />
+                            <point x="0.00070028" y="0.999234" />
+                            <point x="0.167367" y="0.499617" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500332" hotspotY="0.5" original-source="D:\GAME2021\aset\aset icon\Monas.png">
+                        <collision-poly>
+                            <point x="0.4499" y="0.283445" />
+                            <point x="0.499668" y="0.0255017" />
+                            <point x="0.562707" y="0.275502" />
+                            <point x="0.575315" y="0.5" />
+                            <point x="0.907764" y="0.94189" />
+                            <point x="0.499668" y="0.997492" />
+                            <point x="0.114798" y="0.927676" />
+                            <point x="0.435302" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset icon\Sura Baya.png">
+                        <collision-poly>
+                            <point x="0.289133" y="0.30623" />
+                            <point x="0.5" y="0.317318" />
+                            <point x="0.921735" y="0.0828933" />
+                            <point x="0.902792" y="0.5" />
+                            <point x="0.954138" y="0.951426" />
+                            <point x="0.5" y="0.998944" />
+                            <point x="0.0608175" y="0.935586" />
+                            <point x="0.109671" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset icon\Tugu batu satam - bangka belitung.png">
+                        <collision-poly>
+                            <point x="0.214748" y="0.235795" />
+                            <point x="0.5" y="0.000710227" />
+                            <point x="0.784605" y="0.236506" />
+                            <point x="0.753558" y="0.5" />
+                            <point x="0.999353" y="0.99929" />
+                            <point x="0.00388098" y="0.995739" />
+                            <point x="0.261966" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset icon\Tugu Jogja.png">
+                        <collision-poly>
+                            <point x="0.415902" y="0.143611" />
+                            <point x="0.5" y="0.032735" />
+                            <point x="0.584098" y="0.143611" />
+                            <point x="0.703364" y="0.5" />
+                            <point x="0.998471" y="0.999472" />
+                            <point x="0.00152905" y="0.999472" />
+                            <point x="0.311927" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500235" original-source="D:\GAME2021\aset\aset icon\tugu sukarno.png">
+                        <collision-poly>
+                            <point x="0.370518" y="0.0876119" />
+                            <point x="0.5" y="0.0259067" />
+                            <point x="0.629482" y="0.0876119" />
+                            <point x="0.643426" y="0.499764" />
+                            <point x="0.998008" y="0.999529" />
+                            <point x="0.00199203" y="0.999529" />
+                            <point x="0.356574" y="0.499764" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kotak" sid="412786243025223">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="955484145519577" speed="5">
+                    <frame duration="1" hotspotX="0.500295" hotspotY="0.500457" original-source="D:\GAME2021\aset\aset buton\kotak.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kotakAbjad" sid="244708679236131">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="612996364484019" speed="5">
+                    <frame duration="1" hotspotX="0.500295" hotspotY="0.500457" original-source="D:\GAME2021\aset\aset buton\kotak abjad.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kembali" sid="824564165606819">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595192367526661" speed="0">
+                    <frame duration="1" hotspotX="0.501241" hotspotY="0.501217" original-source="D:\GAME2021\aset\aset buton\kembali.png">
+                        <collision-poly>
+                            <point x="0.0694789" y="0.0681265" />
+                            <point x="0.498759" y="0" />
+                            <point x="0.933002" y="0.0656934" />
+                            <point x="1" y="0.498783" />
+                            <point x="0.967742" y="0.96837" />
+                            <point x="0.498759" y="0.978102" />
+                            <point x="0.0421836" y="0.958637" />
+                            <point x="0.00248139" y="0.498783" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501241" hotspotY="0.501229" original-source="D:\GAME2021\aset\aset buton\level(m).png">
+                        <collision-poly>
+                            <point x="0.0669975" y="0.0663391" />
+                            <point x="0.498759" y="0" />
+                            <point x="0.933002" y="0.0663391" />
+                            <point x="0.997519" y="0.498771" />
+                            <point x="0.920596" y="0.921376" />
+                            <point x="0.498759" y="0.987715" />
+                            <point x="0.0794045" y="0.921376" />
+                            <point x="0" y="0.498771" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Level" sid="762196949649334">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="358616445709023" speed="5">
+                    <frame duration="1" hotspotX="0.500637" hotspotY="0.501683" original-source="D:\GAME2021\aset\aset buton\Level.png">
+                        <collision-poly>
+                            <point x="0.0738854" y="0.195286" />
+                            <point x="0.926115" y="0.195286" />
+                            <point x="0.998726" y="0.498316" />
+                            <point x="0.978344" y="0.942761" />
+                            <point x="0.499363" y="0.996633" />
+                            <point x="0.0216561" y="0.942761" />
+                            <point x="0.00127389" y="0.498316" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="waktu" sid="705768882215434">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="699318928832717" speed="5">
+                    <frame duration="1" hotspotX="0.500637" hotspotY="0.501672" original-source="D:\GAME2021\aset\aset buton\waktu.png">
+                        <collision-poly>
+                            <point x="0.0764331" y="0.200669" />
+                            <point x="0.499363" y="0.0133779" />
+                            <point x="0.923567" y="0.200669" />
+                            <point x="0.998726" y="0.498328" />
+                            <point x="0.978344" y="0.943144" />
+                            <point x="0.499363" y="0.996656" />
+                            <point x="0.0216561" y="0.943144" />
+                            <point x="0.00127389" y="0.498328" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="324514229864048">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="HURUF_DRAG" sid="792438436140715">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="SaveX" sid="766240080658340" type="number" />
+                <instance-variable name="SaveY" sid="786841703882321" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="778067275777750">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="28" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="855827580879744" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\0.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="0.996753" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501618" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\A.png">
+                        <collision-poly>
+                            <point x="0.0679612" y="0.0681818" />
+                            <point x="0.498382" y="0" />
+                            <point x="0.932039" y="0.0681818" />
+                            <point x="0.996764" y="0.5" />
+                            <point x="0.928803" y="0.928571" />
+                            <point x="0.498382" y="0.996753" />
+                            <point x="0.0711974" y="0.928571" />
+                            <point x="0.00323625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501618" original-source="D:\GAME2021\aset\aset buton\huruf\B.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0679612" />
+                            <point x="0.5" y="0.00323625" />
+                            <point x="0.928571" y="0.0711974" />
+                            <point x="1" y="0.498382" />
+                            <point x="0.928571" y="0.928803" />
+                            <point x="0.5" y="0.996764" />
+                            <point x="0.0681818" y="0.932039" />
+                            <point x="0" y="0.498382" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\C.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\D.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0.00324675" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\E.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0714286" y="0.928571" />
+                            <point x="0.00324675" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\F.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\G.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501618" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\H.png">
+                        <collision-poly>
+                            <point x="0.0711974" y="0.0714286" />
+                            <point x="0.498382" y="0.00324675" />
+                            <point x="0.928803" y="0.0714286" />
+                            <point x="0.996764" y="0.5" />
+                            <point x="0.932039" y="0.931818" />
+                            <point x="0.498382" y="1" />
+                            <point x="0.0679612" y="0.931818" />
+                            <point x="0.00323625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501618" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\I.png">
+                        <collision-poly>
+                            <point x="0.0679612" y="0.0681818" />
+                            <point x="0.498382" y="0" />
+                            <point x="0.932039" y="0.0681818" />
+                            <point x="0.996764" y="0.5" />
+                            <point x="0.928803" y="0.928571" />
+                            <point x="0.498382" y="0.996753" />
+                            <point x="0.0711974" y="0.928571" />
+                            <point x="0.00323625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\J.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0.00324675" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\K.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\L.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="0.996753" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501618" original-source="D:\GAME2021\aset\aset buton\huruf\M.png">
+                        <collision-poly>
+                            <point x="0.0714286" y="0.0711974" />
+                            <point x="0.5" y="0.00323625" />
+                            <point x="0.931818" y="0.0679612" />
+                            <point x="1" y="0.498382" />
+                            <point x="0.931818" y="0.932039" />
+                            <point x="0.5" y="0.996764" />
+                            <point x="0.0714286" y="0.928803" />
+                            <point x="0.00324675" y="0.498382" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\N.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0.00324675" />
+                            <point x="0.928571" y="0.0714286" />
+                            <point x="0.996753" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\O.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0714286" y="0.928571" />
+                            <point x="0.00324675" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\P.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\Q.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0.00324675" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\R.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0.00324675" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501618" original-source="D:\GAME2021\aset\aset buton\huruf\S.png">
+                        <collision-poly>
+                            <point x="0.0714286" y="0.0711974" />
+                            <point x="0.5" y="0.00323625" />
+                            <point x="0.931818" y="0.0679612" />
+                            <point x="1" y="0.498382" />
+                            <point x="0.931818" y="0.932039" />
+                            <point x="0.5" y="0.996764" />
+                            <point x="0.0714286" y="0.928803" />
+                            <point x="0.00324675" y="0.498382" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\T.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0714286" y="0.928571" />
+                            <point x="0.00324675" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\U.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="0.996753" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\V.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0.00324675" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\W.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0.00324675" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\X.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0.00324675" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\Y.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501618" original-source="D:\GAME2021\aset\aset buton\huruf\Z.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0679612" />
+                            <point x="0.5" y="0.00323625" />
+                            <point x="0.928571" y="0.0711974" />
+                            <point x="1" y="0.498382" />
+                            <point x="0.928571" y="0.928803" />
+                            <point x="0.5" y="0.996764" />
+                            <point x="0.0681818" y="0.932039" />
+                            <point x="0" y="0.498382" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\za.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="0.996753" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HURUF_DROP" sid="174531241472401">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="IdHuruf" sid="260601308936828" type="number" />
+                <instance-variable name="Terisi" sid="279928431620413" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="28" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="879721726158035" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\0.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="0.996753" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501618" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\A.png">
+                        <collision-poly>
+                            <point x="0.0679612" y="0.0681818" />
+                            <point x="0.498382" y="0" />
+                            <point x="0.932039" y="0.0681818" />
+                            <point x="0.996764" y="0.5" />
+                            <point x="0.928803" y="0.928571" />
+                            <point x="0.498382" y="0.996753" />
+                            <point x="0.0711974" y="0.928571" />
+                            <point x="0.00323625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501618" original-source="D:\GAME2021\aset\aset buton\huruf\B.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0679612" />
+                            <point x="0.5" y="0.00323625" />
+                            <point x="0.928571" y="0.0711974" />
+                            <point x="1" y="0.498382" />
+                            <point x="0.928571" y="0.928803" />
+                            <point x="0.5" y="0.996764" />
+                            <point x="0.0681818" y="0.932039" />
+                            <point x="0" y="0.498382" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\C.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\D.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0.00324675" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\E.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0714286" y="0.928571" />
+                            <point x="0.00324675" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\F.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\G.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501618" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\H.png">
+                        <collision-poly>
+                            <point x="0.0711974" y="0.0714286" />
+                            <point x="0.498382" y="0.00324675" />
+                            <point x="0.928803" y="0.0714286" />
+                            <point x="0.996764" y="0.5" />
+                            <point x="0.932039" y="0.931818" />
+                            <point x="0.498382" y="1" />
+                            <point x="0.0679612" y="0.931818" />
+                            <point x="0.00323625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501618" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\I.png">
+                        <collision-poly>
+                            <point x="0.0679612" y="0.0681818" />
+                            <point x="0.498382" y="0" />
+                            <point x="0.932039" y="0.0681818" />
+                            <point x="0.996764" y="0.5" />
+                            <point x="0.928803" y="0.928571" />
+                            <point x="0.498382" y="0.996753" />
+                            <point x="0.0711974" y="0.928571" />
+                            <point x="0.00323625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\J.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0.00324675" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\K.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\L.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="0.996753" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501618" original-source="D:\GAME2021\aset\aset buton\huruf\M.png">
+                        <collision-poly>
+                            <point x="0.0714286" y="0.0711974" />
+                            <point x="0.5" y="0.00323625" />
+                            <point x="0.931818" y="0.0679612" />
+                            <point x="1" y="0.498382" />
+                            <point x="0.931818" y="0.932039" />
+                            <point x="0.5" y="0.996764" />
+                            <point x="0.0714286" y="0.928803" />
+                            <point x="0.00324675" y="0.498382" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\N.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0.00324675" />
+                            <point x="0.928571" y="0.0714286" />
+                            <point x="0.996753" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\O.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0714286" y="0.928571" />
+                            <point x="0.00324675" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\P.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\Q.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0.00324675" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\R.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0.00324675" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501618" original-source="D:\GAME2021\aset\aset buton\huruf\S.png">
+                        <collision-poly>
+                            <point x="0.0714286" y="0.0711974" />
+                            <point x="0.5" y="0.00323625" />
+                            <point x="0.931818" y="0.0679612" />
+                            <point x="1" y="0.498382" />
+                            <point x="0.931818" y="0.932039" />
+                            <point x="0.5" y="0.996764" />
+                            <point x="0.0714286" y="0.928803" />
+                            <point x="0.00324675" y="0.498382" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\T.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0714286" y="0.928571" />
+                            <point x="0.00324675" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\U.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="0.996753" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\V.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0.00324675" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\W.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0.00324675" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\X.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0.00324675" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\Y.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="0.996753" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501618" original-source="D:\GAME2021\aset\aset buton\huruf\Z.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0679612" />
+                            <point x="0.5" y="0.00323625" />
+                            <point x="0.928571" y="0.0711974" />
+                            <point x="1" y="0.498382" />
+                            <point x="0.928571" y="0.928803" />
+                            <point x="0.5" y="0.996764" />
+                            <point x="0.0681818" y="0.932039" />
+                            <point x="0" y="0.498382" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\huruf\za.png">
+                        <collision-poly>
+                            <point x="0.0681818" y="0.0681818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.0681818" />
+                            <point x="0.996753" y="0.5" />
+                            <point x="0.931818" y="0.931818" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0681818" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_utama" sid="586487546815193">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="796172658571226" speed="5">
+                    <frame duration="1" hotspotX="0.500141" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\menu_utama.png">
+                        <collision-poly>
+                            <point x="0.00367751" y="0.00524194" />
+                            <point x="0.999717" y="0.000403226" />
+                            <point x="0.999717" y="0.999597" />
+                            <point x="0.00367751" y="0.994758" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="matahari" sid="449118546309196">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="663137720796518" speed="5">
+                    <frame duration="1" hotspotX="0.501683" hotspotY="0.5" original-source="D:\Desain grafis imam_bagus_triyoga_17312124\matahari.png">
+                        <collision-poly>
+                            <point x="0.144781" y="0.151408" />
+                            <point x="0.498316" y="0" />
+                            <point x="0.855219" y="0.151408" />
+                            <point x="0.996633" y="0.5" />
+                            <point x="0.855219" y="0.848592" />
+                            <point x="0.498316" y="0.996479" />
+                            <point x="0.144781" y="0.848592" />
+                            <point x="0.003367" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="awan" sid="371743982773856">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="911251906800310">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="WaterBackground">
+                    <effect id="waterbg" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="426395771162384" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501742" original-source="D:\Desain grafis imam_bagus_triyoga_17312124\awan.png">
+                        <collision-poly>
+                            <point x="0.161885" y="0.275261" />
+                            <point x="0.5" y="0.10453" />
+                            <point x="0.844262" y="0.264808" />
+                            <point x="0.993852" y="0.498258" />
+                            <point x="0.909836" y="0.84669" />
+                            <point x="0.5" y="0.888502" />
+                            <point x="0.0860656" y="0.853659" />
+                            <point x="0.00819672" y="0.498258" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NUSANTARA" sid="641852294025858">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="579320026318714" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502128" original-source="D:\GAME2021\aset\aset buton\NUSANTARA.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SUSUNAN" sid="411450530423204">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="477878375617034" speed="5">
+                    <frame duration="1" hotspotX="0.500373" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\SUSUNAN.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="music" sid="230310901328774">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="296236619566107" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\music.png">
+                        <collision-poly>
+                            <point x="0.0693069" y="0.0693069" />
+                            <point x="0.5" y="0" />
+                            <point x="0.930693" y="0.0693069" />
+                            <point x="0.997525" y="0.5" />
+                            <point x="0.930693" y="0.930693" />
+                            <point x="0.5" y="0.997525" />
+                            <point x="0.0693069" y="0.930693" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bermain" sid="274398776964621">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="155364958380329" speed="5">
+                    <frame duration="1" hotspotX="0.501259" hotspotY="0.501182" original-source="D:\GAME2021\aset\aset buton\bermain.png">
+                        <collision-poly>
+                            <point x="0.0780856" y="0.073286" />
+                            <point x="0.498741" y="0.00236407" />
+                            <point x="0.924433" y="0.070922" />
+                            <point x="0.982368" y="0.498818" />
+                            <point x="0.921914" y="0.926714" />
+                            <point x="0.0453401" y="0.957447" />
+                            <point x="0.02267" y="0.498818" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="keluar" sid="157460302659450">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="321450385526165" speed="5">
+                    <frame duration="1" hotspotX="0.501241" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\keluar.png">
+                        <collision-poly>
+                            <point x="0.0669975" y="0.063981" />
+                            <point x="0.498759" y="0" />
+                            <point x="0.933002" y="0.063981" />
+                            <point x="0.997519" y="0.5" />
+                            <point x="0.967742" y="0.969194" />
+                            <point x="0.0992556" y="0.905213" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Lanjut" sid="377495681867697">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="801725040634982" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GAME2021\aset\aset buton\Lanjut.png">
+                        <collision-poly>
+                            <point x="0.0671642" y="0.065534" />
+                            <point x="0.5" y="0.00242718" />
+                            <point x="0.932836" y="0.065534" />
+                            <point x="1" y="0.5" />
+                            <point x="0.915423" y="0.917476" />
+                            <point x="0.5" y="0.973301" />
+                            <point x="0.0845771" y="0.917476" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>MainMenu.xml</layout>
+        <layout>game.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>MainMenu.xml</event-sheet>
+        <event-sheet>game.xml</event-sheet>
+    </event-folder>
+    <global-instances />
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

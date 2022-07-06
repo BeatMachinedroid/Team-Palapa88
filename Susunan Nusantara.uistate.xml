@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout active="1" order="1">game</layout>
+        <layout order="2">MainMenu</layout>
+        <layout order="4">splashscreen</layout>
+        <layout order="8">GameOver</layout>
+        <layout order="10">pilihlevel</layout>
+        <event-sheet order="0">game</event-sheet>
+        <event-sheet order="3">GlobalEvent</event-sheet>
+        <event-sheet order="5">splashscreen</event-sheet>
+        <event-sheet order="6">MainMenu</event-sheet>
+        <event-sheet order="7">pilihlevel</event-sheet>
+        <event-sheet order="9">GameOver</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="1" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="object-folder/system/" />
+        <folder expanded="1" path="object-folder/data/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="sound-folder/icon/" />
+        <folder expanded="1" path="sound-folder/alfabet/" />
+        <folder expanded="1" path="sound-folder/suaraicon/" />
+        <folder expanded="1" path="animation-folder/gambaricon/" />
+        <folder expanded="1" path="animation-folder/kotak/" />
+        <folder expanded="1" path="animation-folder/kotakAbjad/" />
+        <folder expanded="1" path="animation-folder/kembali/" />
+        <folder expanded="1" path="animation-folder/Level/" />
+        <folder expanded="1" path="animation-folder/waktu/" />
+        <folder expanded="1" path="animation-folder/HURUF_DRAG/" />
+        <folder expanded="1" path="animation-folder/HURUF_DROP/" />
+        <folder expanded="1" path="animation-folder/menu_utama/" />
+        <folder expanded="1" path="animation-folder/matahari/" />
+        <folder expanded="1" path="animation-folder/awan/" />
+        <folder expanded="1" path="animation-folder/NUSANTARA/" />
+        <folder expanded="1" path="animation-folder/SUSUNAN/" />
+        <folder expanded="1" path="animation-folder/bermain/" />
+        <folder expanded="1" path="animation-folder/Lanjut/" />
+        <folder expanded="1" path="animation-folder/hitam/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/BG2/" />
+        <folder expanded="1" path="animation-folder/kotak2/" />
+        <folder expanded="1" path="animation-folder/kotak3/" />
+        <folder expanded="1" path="animation-folder/MUSIC2/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/BERMAIN2/" />
+        <folder expanded="1" path="animation-folder/BgHitam/" />
+        <folder expanded="1" path="animation-folder/bg3/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/character/" />
+        <folder expanded="1" path="animation-folder/kotak4/" />
+        <folder expanded="1" path="animation-folder/transisi/" />
+        <folder expanded="1" path="animation-folder/gameOver/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/loadbar/" />
+        <folder expanded="1" path="animation-folder/STIKER/" />
+        <folder expanded="1" path="animation-folder/STIKER2/" />
+        <folder expanded="1" path="animation-folder/kemendikbud/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/Sprite8/" />
+        <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/Sprite10/" />
+        <folder expanded="1" path="animation-folder/mame/" />
+        <folder expanded="1" path="animation-folder/UNIVERSITASTEKNOKRAT/" />
+        <folder expanded="1" path="animation-folder/logorumahbelajar/" />
+        <folder expanded="1" path="animation-folder/kotak5/" />
+        <folder expanded="1" path="animation-folder/UNIVERSITASTEKNOKRAT2/" />
+        <folder expanded="1" path="animation-folder/info/" />
+    </folders-expanded>
+</c2uistate>

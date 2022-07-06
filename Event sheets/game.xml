@@ -1,0 +1,1126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>game</name>
+    <events>
+        <include>GlobalEvent</include>
+        <variable constant="0" name="JawabanBenar" sid="237872121635387" static="0" type="number">0</variable>
+        <variable constant="0" name="IDsoal" sid="114251247144724" static="0" type="number">0</variable>
+        <variable constant="0" name="IDlevel" sid="197315410214454" static="0" type="number">0</variable>
+        <variable constant="0" name="GameON" sid="161087468460842" static="0" type="number">0</variable>
+        <variable constant="0" name="Waktu" sid="536402993279579" static="0" type="number">60</variable>
+        <event-group description="" sid="978573682540579" title="sistem drag and drop">
+            <sub-events>
+                <event-block sid="579157408982036">
+                    <conditions>
+                        <condition behavior="DragDrop" id="1" name="On drag start" sid="573859459927983" type="HURUF_DRAG" />
+                    </conditions>
+                    <actions>
+                        <action id="-24" name="Move to top" sid="818595252082434" type="HURUF_DRAG" />
+                        <action id="0" name="Play" sid="477208124477264" type="Audio">
+                            <param id="0" name="Audio file">perpindahan puzle kembali ketempat semula</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="337080506426763">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="952116318975139" type="HURUF_DRAG" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="922861030245137">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="467840903752576" type="HURUF_DRAG">
+                                    <param id="0" name="Object">HURUF_DROP</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="455678906730849">
+                                    <conditions>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="946578055516896" type="HURUF_DROP">
+                                            <param id="0" name="Instance variable">Terisi</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="366835384655824">
+                                            <conditions>
+                                                <condition id="3" name="Compare frame" sid="183527640451331" type="HURUF_DRAG">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Number">HURUF_DROP.IdHuruf</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="LiteTween" id="10" name="Start" sid="620191297650890" type="HURUF_DRAG">
+                                                    <param id="0" name="Start Mode">0</param>
+                                                    <param id="1" name="Force use current">0</param>
+                                                </action>
+                                                <action behavior="LiteTween" id="3" name="Set target" sid="644624380061896" type="HURUF_DRAG">
+                                                    <param id="0" name="Target is">0</param>
+                                                    <param id="1" name="Relativity">0</param>
+                                                    <param id="2" name="Value">HURUF_DROP.X</param>
+                                                </action>
+                                                <action behavior="LiteTween" id="3" name="Set target" sid="844966957604500" type="HURUF_DRAG">
+                                                    <param id="0" name="Target is">1</param>
+                                                    <param id="1" name="Relativity">0</param>
+                                                    <param id="2" name="Value">HURUF_DROP.Y</param>
+                                                </action>
+                                                <action id="-13" name="Set boolean" sid="233953426900933" type="HURUF_DROP">
+                                                    <param id="0" name="Instance variable">Terisi</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action behavior="LiteTween2" id="10" name="Start" sid="570924746600043" type="HURUF_DRAG">
+                                                    <param id="0" name="Start Mode">0</param>
+                                                    <param id="1" name="Force use current">0</param>
+                                                </action>
+                                                <action behavior="LiteTween2" id="3" name="Set target" sid="629818941062460" type="HURUF_DRAG">
+                                                    <param id="0" name="Target is">4</param>
+                                                    <param id="1" name="Relativity">0</param>
+                                                    <param id="2" name="Value">HURUF_DROP.Width</param>
+                                                </action>
+                                                <action behavior="LiteTween2" id="3" name="Set target" sid="131747306711111" type="HURUF_DRAG">
+                                                    <param id="0" name="Target is">5</param>
+                                                    <param id="1" name="Relativity">0</param>
+                                                    <param id="2" name="Value">HURUF_DROP.Height</param>
+                                                </action>
+                                                <action behavior="DragDrop" id="0" name="Set enabled" sid="449241528396681" type="HURUF_DRAG">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="7" name="Play (by name)" sid="703237262648635" type="Audio">
+                                                    <param id="0" name="Folder">0</param>
+                                                    <param id="1" name="Audio file name">str(HURUF_DROP.IdHuruf)</param>
+                                                    <param id="3" name="Loop">0</param>
+                                                    <param id="4" name="Volume">15</param>
+                                                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                                <action id="0" name="Play" sid="715822156072982" type="Audio">
+                                                    <param id="0" name="Audio file">perpindahan button level dll</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="592045099831180" type="System">
+                                                    <param id="0" name="Variable">JawabanBenar</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="868974760287047">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="175732220896940" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="LiteTween" id="10" name="Start" sid="778381807534372" type="HURUF_DRAG">
+                                                    <param id="0" name="Start Mode">0</param>
+                                                    <param id="1" name="Force use current">0</param>
+                                                </action>
+                                                <action behavior="LiteTween" id="3" name="Set target" sid="884305555750597" type="HURUF_DRAG">
+                                                    <param id="0" name="Target is">0</param>
+                                                    <param id="1" name="Relativity">0</param>
+                                                    <param id="2" name="Value">Self.SaveX</param>
+                                                </action>
+                                                <action behavior="LiteTween" id="3" name="Set target" sid="179997054188429" type="HURUF_DRAG">
+                                                    <param id="0" name="Target is">1</param>
+                                                    <param id="1" name="Relativity">0</param>
+                                                    <param id="2" name="Value">Self.SaveY</param>
+                                                </action>
+                                                <action id="0" name="Play" sid="671240651839316" type="Audio">
+                                                    <param id="0" name="Audio file">perpindahan button level dll</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="579540891033067">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="829731228305144" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="940718219530415" type="HURUF_DRAG">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="873372940414802" type="HURUF_DRAG">
+                                            <param id="0" name="Target is">0</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Self.SaveX</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="116726056597230" type="HURUF_DRAG">
+                                            <param id="0" name="Target is">1</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Self.SaveY</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="852930666193941" type="Audio">
+                                            <param id="0" name="Audio file">perpindahan button level dll</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="528635415916723">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="761287940862343" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="LiteTween" id="10" name="Start" sid="135926972449132" type="HURUF_DRAG">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="839137485625772" type="HURUF_DRAG">
+                                    <param id="0" name="Target is">0</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveX</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="216139224039655" type="HURUF_DRAG">
+                                    <param id="0" name="Target is">1</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveY</param>
+                                </action>
+                                <action id="0" name="Play" sid="969861004906340" type="Audio">
+                                    <param id="0" name="Audio file">perpindahan button level dll</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="492796712124909" title="sistem posisi random">
+            <sub-events>
+                <event-block sid="168939614950113">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="264820468058687" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="569285671829347" type="System">
+                            <param id="0" name="Layer">&quot;Menang&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="875298106273112" type="System">
+                            <param id="0" name="Variable">JawabanBenar</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="162664282688679" type="System">
+                            <param id="0" name="Variable">GameON</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="786118130601728" type="System">
+                            <param id="0" name="Variable">Waktu</param>
+                            <param id="1" name="Value">30</param>
+                        </action>
+                        <action id="0" name="Call function" sid="376604424778860" type="Function">
+                            <param id="0" name="Name">&quot;Pin&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="5" name="Set frame" sid="962594573170871" type="gambaricon">
+                            <param id="0" name="Frame number">IDlevel</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="642251581949906">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="461472117927709" type="System">
+                                    <param id="0" name="Variable">IDlevel</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">IDlevel</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="869500488242363">
+                                    <conditions>
+                                        <condition id="-16" inverted="1" name="Is on layer" sid="679038397394811" type="HURUF_DRAG">
+                                            <param id="0" name="Layer">&quot;lavel&quot;&amp;IDlevel+1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="385284461446789" type="HURUF_DRAG" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="104701243744648">
+                                    <conditions>
+                                        <condition id="-16" inverted="1" name="Is on layer" sid="135564239821457" type="HURUF_DROP">
+                                            <param id="0" name="Layer">&quot;lavel&quot;&amp;IDlevel+1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="504225824905626" type="HURUF_DROP" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="588824017561036">
+                            <conditions />
+                            <actions>
+                                <action id="-10" name="Set value" sid="492832959070663" type="HURUF_DROP">
+                                    <param id="0" name="Instance variable">IdHuruf</param>
+                                    <param id="1" name="Value">Self.AnimationFrame</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="802219956477820" type="HURUF_DROP">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="989390119077010" type="HURUF_DROP">
+                                    <param id="0" name="Opacity">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="621363709944988">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Clear" sid="595441084003305" type="Data_posisi" />
+                                <action id="1" name="Set size" sid="719270630447158" type="Data_posisi">
+                                    <param id="0" name="Width">10</param>
+                                    <param id="1" name="Height">1</param>
+                                    <param id="2" name="Depth">1</param>
+                                </action>
+                                <action id="0" name="Clear" sid="665575110783930" type="Data_Random" />
+                                <action id="1" name="Set size" sid="900686489291844" type="Data_Random">
+                                    <param id="0" name="Width">10</param>
+                                    <param id="1" name="Height">1</param>
+                                    <param id="2" name="Depth">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="348919831344391">
+                                    <conditions>
+                                        <condition id="-10" name="For" sid="598388328896158" type="System">
+                                            <param id="0" name="Name">&quot;&quot;</param>
+                                            <param id="1" name="Start index">0</param>
+                                            <param id="2" name="End index">9</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="323033644519162">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="518722632089566" type="HURUF_DRAG">
+                                                    <param id="0" name="Instance variable">idHuruf</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">loopindex</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="2" name="Set at X" sid="841175905036633" type="Data_posisi">
+                                                    <param id="0" name="X">loopindex</param>
+                                                    <param id="1" name="Value">HURUF_DRAG.X&amp;&quot;,&quot;&amp;HURUF_DRAG.Y</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="797928561309168">
+                                    <conditions>
+                                        <condition id="-10" name="For" sid="793636492625199" type="System">
+                                            <param id="0" name="Name">&quot;&quot;</param>
+                                            <param id="1" name="Start index">0</param>
+                                            <param id="2" name="End index">9</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <variable constant="0" name="Rand" sid="496872209795624" static="0" type="number">0</variable>
+                                        <event-block sid="712373807222410">
+                                            <conditions />
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="865459310714129" type="System">
+                                                    <param id="0" name="Variable">Rand</param>
+                                                    <param id="1" name="Value">int(random(1,11))</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="601311105592875">
+                                                    <conditions>
+                                                        <condition id="-23" name="While" sid="292723161526551" type="System" />
+                                                        <condition id="5" name="Contains value" sid="637882667617831" type="Data_Random">
+                                                            <param id="0" name="Value">Rand</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="681526393308792" type="System">
+                                                            <param id="0" name="Variable">Rand</param>
+                                                            <param id="1" name="Value">int(random(1,11))</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="161034697919299">
+                                                    <conditions />
+                                                    <actions>
+                                                        <action id="2" name="Set at X" sid="553698679874709" type="Data_Random">
+                                                            <param id="0" name="X">loopindex</param>
+                                                            <param id="1" name="Value">Rand</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="153596292483474">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="239601196131402" type="HURUF_DRAG">
+                                                            <param id="0" name="Instance variable">idHuruf</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">loopindex</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-3" name="Set position" sid="620110930507474" type="HURUF_DRAG">
+                                                            <param id="0" name="X">int(trim(tokenat(Data_posisi.At(Rand-1),0,&quot;,&quot;)))</param>
+                                                            <param id="1" name="Y">int(trim(tokenat(Data_posisi.At(Rand-1),1,&quot;,&quot;)))</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="695408473108922">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="817718526801760" type="HURUF_DRAG">
+                                            <param id="0" name="Instance variable">SaveX</param>
+                                            <param id="1" name="Value">Self.X</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="976209961441336" type="HURUF_DRAG">
+                                            <param id="0" name="Instance variable">SaveY</param>
+                                            <param id="1" name="Value">Self.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="528725457835413">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="523356163008136" type="Particles" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="463383561001072" type="Particles" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="609717213806292">
+            <conditions>
+                <condition id="0" name="On function" sid="378794888767877" type="Function">
+                    <param id="0" name="Name">&quot;SuaraIcon&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="531651270223664" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;benar&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="243377731106240" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="723534201173056">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="517914006639927" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="536835869121123" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;pure bali&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="242982817719013">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="494670716477957" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="756658796749272" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;monas jakarta&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="541121808095752">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="432323649559690" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="817151326686651" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;jam gadang padang&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="739946436051103">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="930371336226525" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="250947918808635" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;ampera palembang&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="711366610300441">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="428202720689192" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="924772647702471" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;borobudur jateng&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="447753699634822">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="910963354176660" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="229014161634147" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;siger lampung&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="194953630806852">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="895893237594474" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="800948919424549" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;gedugn sate bandung&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="147260100850597">
+            <conditions>
+                <condition id="0" name="On function" sid="579256227207648" type="Function">
+                    <param id="0" name="Name">&quot;Menang&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="493482656456561" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="478381502013524" type="System">
+                    <param id="0" name="Layer">&quot;Menang&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="749469292534266">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="669383721439002" type="BgHitam">
+                            <param id="0" name="Unique ID">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="863849057115604" type="BgHitam">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="186274181191119" type="BgHitam">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="104379154987306" type="BgHitam">
+                            <param id="0" name="Target is">3</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">50</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="124813608643562">
+                    <conditions />
+                    <actions>
+                        <action id="-2" name="Set Y" sid="215813309198248" type="bg3">
+                            <param id="0" name="Y">-150.883</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="103885115604661" type="bg3">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="986758927382530" type="bg3">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="613978129423995" type="bg3">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">211</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="815623824405644">
+            <conditions>
+                <condition id="0" name="On function" sid="126264514232917" type="Function">
+                    <param id="0" name="Name">&quot;Pin&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="403010907097421">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="778212559472018" type="bg3">
+                            <param id="0" name="Unique ID">46</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="703935163783060">
+                            <conditions />
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="941820542425472" type="Sprite4">
+                                    <param id="0" name="Pin to">bg3</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="418114338435152">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="346495623886330" type="kembali">
+                                    <param id="0" name="Unique ID">34</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="990233136567374" type="kembali">
+                                    <param id="0" name="Pin to">bg3</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="982483322561131">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="756664573897770" type="kembali">
+                                    <param id="0" name="Unique ID">47</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="656628551931903" type="kembali">
+                                    <param id="0" name="Pin to">bg3</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="925487906818944">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="337987455140052" type="kembali">
+                                    <param id="0" name="Unique ID">48</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="791135955108161" type="kembali">
+                                    <param id="0" name="Pin to">bg3</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="817880369107480">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="176825713672484" type="System">
+                    <param id="0" name="Layer">&quot;Menang&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="725893826821125">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="670746881562415" type="Touch">
+                            <param id="0" name="Object">kembali</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="978142870051443">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="955031511744163" type="kembali">
+                                    <param id="0" name="Unique ID">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="719250386474713" type="Function">
+                                    <param id="0" name="Name">&quot;kembali&quot;</param>
+                                    <param id="1" name="Parameter {n}">kembali.UID</param>
+                                </action>
+                                <action id="0" name="Call function" sid="996379420426026" type="Function">
+                                    <param id="0" name="Name">&quot;transisi&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;keluar&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="932843211481889" type="System">
+                                    <param id="0" name="Seconds">transisi.LiteTween.Duration</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="657908408116816" type="System">
+                                    <param id="0" name="Layout">MainMenu</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="703984012867817">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="544644720884070" type="System">
+                    <param id="0" name="Layer">&quot;Menang&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="DragDrop" id="0" name="Set enabled" sid="497448969308172" type="HURUF_DRAG">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="150179764381152">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="425039416557397" type="Touch">
+                            <param id="0" name="Object">kembali</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>btn kembali</comment>
+                        <event-block sid="745673746760031">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="260980331209641" type="kembali">
+                                    <param id="0" name="Unique ID">47</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="158514626280120" type="Function">
+                                    <param id="0" name="Name">&quot;kembali&quot;</param>
+                                    <param id="1" name="Parameter {n}">kembali.UID</param>
+                                </action>
+                                <action id="0" name="Call function" sid="348634087253484" type="Function">
+                                    <param id="0" name="Name">&quot;transisi&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;keluar&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="816363915659380" type="System">
+                                    <param id="0" name="Seconds">transisi.LiteTween.Duration</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="229120947870032" type="System">
+                                    <param id="0" name="Layout">MainMenu</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>btn ulang</comment>
+                        <event-block sid="429114632450283">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="675853575180897" type="kembali">
+                                    <param id="0" name="Unique ID">34</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="109666003031930" type="Function">
+                                    <param id="0" name="Name">&quot;kembali&quot;</param>
+                                    <param id="1" name="Parameter {n}">kembali.UID</param>
+                                </action>
+                                <action id="0" name="Call function" sid="783575201093441" type="Function">
+                                    <param id="0" name="Name">&quot;transisi&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;keluar&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="396096442332448" type="System">
+                                    <param id="0" name="Seconds">transisi.LiteTween.Duration</param>
+                                </action>
+                                <action id="-26" name="Restart layout" sid="753136040782684" type="System" />
+                            </actions>
+                        </event-block>
+                        <comment>btn lanjut</comment>
+                        <event-block sid="492611376327535">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="520509913213709" type="kembali">
+                                    <param id="0" name="Unique ID">48</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="868210631843200" type="System">
+                                    <param id="0" name="Variable">IDlevel</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="254729261841937" type="Function">
+                                    <param id="0" name="Name">&quot;kembali&quot;</param>
+                                    <param id="1" name="Parameter {n}">kembali.UID</param>
+                                </action>
+                                <action disabled="1" id="-9" name="Set value" sid="831984455682314" type="System">
+                                    <param id="0" name="Variable">IDlevel</param>
+                                    <param id="1" name="Value">int(random(0,7))</param>
+                                </action>
+                                <action id="0" name="Call function" sid="665532659996307" type="Function">
+                                    <param id="0" name="Name">&quot;transisi&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;keluar&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="578207599520324" type="System">
+                                    <param id="0" name="Seconds">transisi.LiteTween.Duration</param>
+                                </action>
+                                <action id="-26" name="Restart layout" sid="740087657598005" type="System" />
+                                <action id="-10" name="Add to" sid="879044987629192" type="System">
+                                    <param id="0" name="Variable">IDsoal</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="784715978940830" type="System">
+                                    <param id="0" name="Variable">IDlevel</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="215345910013346">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="364688806205817" type="kembali">
+                                    <param id="0" name="Unique ID">48</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="488779409157403" type="System">
+                                    <param id="0" name="Variable">IDlevel</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="645761997804356" type="System">
+                                    <param id="0" name="Layout">MainMenu</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="890846069068274" type="System">
+                                    <param id="0" name="Variable">IDlevel</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="577581284768643" type="System">
+                                    <param id="0" name="Variable">IDsoal</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="138636459396965" title="Seting text">
+            <sub-events>
+                <event-block sid="262664605884959">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="526823109506256" type="SpriteFont">
+                            <param id="0" name="Unique ID">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="621269846177372" type="SpriteFont">
+                            <param id="0" name="Text">IDsoal+1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="392756219223000">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="235593390140463" type="SpriteFont">
+                            <param id="0" name="Unique ID">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="601499013225131" type="SpriteFont">
+                            <param id="0" name="Text">zeropad(int(Waktu/60%60),2)&amp;&quot;:&quot;&amp;zeropad(int(Waktu%60),2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="103915826979830" title="Game sistem">
+            <sub-events>
+                <event-block sid="712909936052199">
+                    <conditions>
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="229238938545325" type="System">
+                            <param id="0" name="Layer">&quot;Menang&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="638546697362474">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="246048038099461" type="System">
+                                    <param id="0" name="Variable">Waktu</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="629456876595433" type="System">
+                                    <param id="0" name="Variable">GameON</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="208448508111918">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="701313479153801" type="System">
+                                            <param id="0" name="Interval (seconds)">1.0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="844899554223647" type="System">
+                                            <param id="0" name="Variable">Waktu</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="388329263118697">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="167644069620206" type="System">
+                                            <param id="0" name="Variable">Waktu</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="716995084122097" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="760048834777941" type="System">
+                                            <param id="0" name="Variable">GameON</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="981227786053865" type="Function">
+                                            <param id="0" name="Name">&quot;transisi&quot;</param>
+                                            <param id="1" name="Parameter {n}">&quot;keluar&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="244404665714237" type="System">
+                                            <param id="0" name="Seconds">transisi.LiteTween.Duration</param>
+                                        </action>
+                                        <action disabled="1" id="0" name="Call function" sid="599331797197779" type="Function">
+                                            <param id="0" name="Name">&quot;Menang&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action disabled="1" id="7" name="Play (by name)" sid="580836833320782" type="Audio">
+                                            <param id="0" name="Folder">0</param>
+                                            <param id="1" name="Audio file name">&quot;salah&quot;</param>
+                                            <param id="3" name="Loop">0</param>
+                                            <param id="4" name="Volume">0</param>
+                                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-2" name="Go to layout" sid="390744724435807" type="System">
+                                            <param id="0" name="Layout">GameOver</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="877036602436467">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="998228508745186" type="System">
+                            <param id="0" name="Variable">JawabanBenar</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">HURUF_DROP.Count</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="688253179222259" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="141251606965169" type="System">
+                            <param id="0" name="Variable">GameON</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="DragDrop" id="0" name="Set enabled" sid="283809654514150" type="HURUF_DRAG">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="148398654914836" type="Function">
+                            <param id="0" name="Name">&quot;SuaraIcon&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="562208653734107" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="0" name="Call function" sid="220609782178841" type="Function">
+                            <param id="0" name="Name">&quot;Menang&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="556215480477441" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="7" name="Play (by name)" sid="189875974221692" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;benar&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="824423205896598">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="190902231461263">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="280916412767000" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="606176995309877">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="828213941915648" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="750468989450124" type="infosoal">
+                            <param id="0" name="Text">&quot;ini icon kota dari bali apakah nama icon ini?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="309814647053578">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="533730506714924" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="951526111752970" type="infosoal">
+                            <param id="0" name="Text">&quot;ini icon kota dari jakarta apakah nama icon ini?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="152015806336570">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="526793990641399" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="395786832770771" type="infosoal">
+                            <param id="0" name="Text">&quot;ini icon kota dari padang apakah nama icon ini?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="544781913193517">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="730626152014317" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="329449417992982" type="infosoal">
+                            <param id="0" name="Text">&quot;ini icon kota dari palembang apakah nama icon ini?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="270444404120610">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="872813319353337" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="156370894914508" type="infosoal">
+                            <param id="0" name="Text">&quot;ini icon kota dari jawa tengah apakah nama icon ini?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="705352643296253">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="599055441604461" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="359221712616787" type="infosoal">
+                            <param id="0" name="Text">&quot;ini icon kota dari lampung apakah nama icon ini?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="140153817799664">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="621331411712084" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="324307238024169" type="infosoal">
+                            <param id="0" name="Text">&quot;ini icon kota dari bandung apakah nama icon ini?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MainMenu</name>
+    <events>
+        <include>GlobalEvent</include>
+        <variable constant="0" name="lagu" sid="448233886693161" static="0" type="number">0</variable>
+        <event-block sid="993033673477599">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="118038298421378" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="499796732658561" type="System">
+                    <param id="0" name="Layer">&quot;UI_Info&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="354278809149417" type="System">
+                    <param id="0" name="Layer">&quot;UI_Keluar&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Call function" sid="567142693344208" type="Function">
+                    <param id="0" name="Name">&quot;Pin&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="627341936373473">
+            <conditions>
+                <condition id="0" name="On function" sid="811300271623577" type="Function">
+                    <param id="0" name="Name">&quot;UI_Info&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="744243368980085" type="System">
+                    <param id="0" name="Layer">&quot;UI_Info&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="987824905836951">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="605098732239998" type="BgHitam">
+                            <param id="0" name="Unique ID">113</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="780830409010050" type="BgHitam">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="493600153140882" type="BgHitam">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="549796854771961" type="BgHitam">
+                            <param id="0" name="Target is">3</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">50</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="847533220158655">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="584430324941092" type="info">
+                            <param id="0" name="Unique ID">114</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="217776975700688" type="info">
+                            <param id="0" name="Y">-150.883</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="302368410843757" type="info">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="660039759968601" type="info">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="965038696403712" type="info">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">238</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="904680064159112">
+            <conditions>
+                <condition id="0" name="On function" sid="817363268647511" type="Function">
+                    <param id="0" name="Name">&quot;UI_Keluar&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="573125823132861" type="System">
+                    <param id="0" name="Layer">&quot;UI_Keluar&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="546414607413875">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="639295063274413" type="BgHitam">
+                            <param id="0" name="Unique ID">116</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="785678331876812" type="BgHitam">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="560214024586775" type="BgHitam">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="892161401652818" type="BgHitam">
+                            <param id="0" name="Target is">3</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">50</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="995961650320314">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="603881199962811" type="info">
+                            <param id="0" name="Unique ID">117</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="886080895351811" type="info">
+                            <param id="0" name="Y">-150.883</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="508773227117122" type="info">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="154967460510483" type="info">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="310354083112031" type="info">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">238</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="243988650329074">
+            <conditions>
+                <condition id="0" name="On function" sid="863216078830074" type="Function">
+                    <param id="0" name="Name">&quot;Pin&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="730820597647388">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="171468203691879" type="info">
+                            <param id="0" name="Unique ID">114</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="970875883375180">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="619461281623591" type="kembali">
+                                    <param id="0" name="Unique ID">115</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="863990216152394" type="kembali">
+                                    <param id="0" name="Pin to">info</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="355294413228972">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="493722590794241" type="info">
+                            <param id="0" name="Unique ID">117</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="428447803273726">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="674152401705053" type="kembali">
+                                    <param id="0" name="Unique ID">118</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="707481545108935" type="kembali">
+                                    <param id="0" name="Pin to">info</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="903753602116708">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="209099479568488" type="kembali">
+                                    <param id="0" name="Unique ID">118</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="255845284293123" type="kembali">
+                                    <param id="0" name="Pin to">info</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="780071505969076">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="770643144599230" type="kembali">
+                                    <param id="0" name="Unique ID">121</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="315028335515716" type="kembali">
+                                    <param id="0" name="Pin to">info</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="885530178167694">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="416204550068566" type="SpriteFont">
+                                    <param id="0" name="Unique ID">119</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="719021869150263" type="SpriteFont">
+                                    <param id="0" name="Pin to">info</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="563924306273771">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="688708557394749" type="SpriteFont">
+                                    <param id="0" name="Unique ID">120</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="684370659615786" type="SpriteFont">
+                                    <param id="0" name="Pin to">info</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="819866797360169">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="715208613663135" type="SpriteFont">
+                                    <param id="0" name="Unique ID">122</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="671570932904048" type="SpriteFont">
+                                    <param id="0" name="Pin to">info</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="552599253441770">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="204164402331337" type="System">
+                    <param id="0" name="Layer">&quot;UI_Info&quot;</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="567969601666496" type="System">
+                    <param id="0" name="Layer">&quot;UI_Keluar&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="502844939218051">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="506945698677715" type="Touch">
+                            <param id="0" name="Object">kembali</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>BTN_BELAJAR</comment>
+                        <event-block sid="294772739546649">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="464854274348443" type="kembali">
+                                    <param id="0" name="Unique ID">81</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="784488182768177" type="Function">
+                                    <param id="0" name="Name">&quot;kembali&quot;</param>
+                                    <param id="1" name="Parameter {n}">kembali.UID</param>
+                                </action>
+                                <action id="0" name="Call function" sid="622350144725402" type="Function">
+                                    <param id="0" name="Name">&quot;transisi&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;keluar&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="691181898356726" type="System">
+                                    <param id="0" name="Seconds">transisi.LiteTween.Duration</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="744658966606792" type="System">
+                                    <param id="0" name="Layout">pilihlevel</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>BTN_MAINGAME</comment>
+                        <event-block sid="116892243515750">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="274626005402649" type="kembali">
+                                    <param id="0" name="Unique ID">37</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="591316380672705" type="Function">
+                                    <param id="0" name="Name">&quot;kembali&quot;</param>
+                                    <param id="1" name="Parameter {n}">kembali.UID</param>
+                                </action>
+                                <action id="0" name="Call function" sid="599745743314970" type="Function">
+                                    <param id="0" name="Name">&quot;transisi&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;keluar&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="246832683260048" type="System">
+                                    <param id="0" name="Seconds">transisi.LiteTween.Duration</param>
+                                </action>
+                                <action disabled="1" id="-9" name="Set value" sid="669746900655019" type="System">
+                                    <param id="0" name="Variable">IDlevel</param>
+                                    <param id="1" name="Value">int(random(0,7))</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="896886854231634" type="System">
+                                    <param id="0" name="Layout">game</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>ISI_MUSIK</comment>
+                        <event-block sid="142703589862300">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="391863858439797" type="kembali">
+                                    <param id="0" name="Unique ID">35</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="744841181908203" type="Function">
+                                    <param id="0" name="Name">&quot;kembali&quot;</param>
+                                    <param id="1" name="Parameter {n}">kembali.UID</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="723121084406832">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="262348476985402" type="System">
+                                            <param id="0" name="Variable">Musik</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="671063594635446" type="System">
+                                            <param id="0" name="Variable">Musik</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="765485009286628">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="688198618556080" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="904578114557530" type="System">
+                                            <param id="0" name="Variable">Musik</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>btn_info</comment>
+                        <event-block sid="523571770185832">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="971467753781059" type="kembali">
+                                    <param id="0" name="Unique ID">94</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="645141966705087" type="Function">
+                                    <param id="0" name="Name">&quot;kembali&quot;</param>
+                                    <param id="1" name="Parameter {n}">kembali.UID</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="243151985046226" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="0" name="Call function" sid="411588076054620" type="Function">
+                                    <param id="0" name="Name">&quot;UI_Info&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>PANGGIL_KELUAR</comment>
+                        <event-block sid="867994494138834">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="909993468858128" type="kembali">
+                                    <param id="0" name="Unique ID">124</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="235840406360912" type="Function">
+                                    <param id="0" name="Name">&quot;kembali&quot;</param>
+                                    <param id="1" name="Parameter {n}">kembali.UID</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="604574695962609" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="0" name="Call function" sid="998462827704419" type="Function">
+                                    <param id="0" name="Name">&quot;UI_Keluar&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="225793240175445">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="771556142494181" type="System">
+                    <param id="0" name="Layer">&quot;UI_Info&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="549283529893673">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="754349914274931" type="Touch">
+                            <param id="0" name="Object">kembali</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>btn_info</comment>
+                        <event-block sid="221889570763808">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="145154434408207" type="kembali">
+                                    <param id="0" name="Unique ID">115</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="707620298691794" type="Function">
+                                    <param id="0" name="Name">&quot;kembali&quot;</param>
+                                    <param id="1" name="Parameter {n}">kembali.UID</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="731895178289249" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="894886355041941" type="System">
+                                    <param id="0" name="Layer">&quot;UI_Info&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="689228014795691">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="197730393560066" type="System">
+                    <param id="0" name="Layer">&quot;UI_Keluar&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="609489437068032">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="233495643217586" type="Touch">
+                            <param id="0" name="Object">kembali</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>btn_KELUAR</comment>
+                        <event-block sid="686302874361379">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="319211846377010" type="kembali">
+                                    <param id="0" name="Unique ID">118</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="845365211696887" type="Function">
+                                    <param id="0" name="Name">&quot;kembali&quot;</param>
+                                    <param id="1" name="Parameter {n}">kembali.UID</param>
+                                </action>
+                                <action id="0" name="Call function" sid="959861345705866" type="Function">
+                                    <param id="0" name="Name">&quot;transisi&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;keluar&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="691113979726472" type="System">
+                                    <param id="0" name="Seconds">transisi.LiteTween.Duration</param>
+                                </action>
+                                <action id="1" name="Close" sid="945384053747015" type="Browser" />
+                            </actions>
+                        </event-block>
+                        <comment>BTN_TUTUP</comment>
+                        <event-block sid="220700711824678">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="322166987658115" type="kembali">
+                                    <param id="0" name="Unique ID">121</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="641437095777090" type="Function">
+                                    <param id="0" name="Name">&quot;kembali&quot;</param>
+                                    <param id="1" name="Parameter {n}">kembali.UID</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="385770333332174" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="855324723884156" type="System">
+                                    <param id="0" name="Layer">&quot;UI_Keluar&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

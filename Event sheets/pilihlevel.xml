@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>pilihlevel</name>
+    <events>
+        <include>GlobalEvent</include>
+        <event-block sid="290222209050866">
+            <conditions>
+                <condition id="3" name="On touched object" sid="270693351406129" type="Touch">
+                    <param id="0" name="Object">kembali</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>SEBELUMNYA</comment>
+                <event-block sid="198007099198857">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="587866706535215" type="kembali">
+                            <param id="0" name="Unique ID">178</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="992615230875046" type="Function">
+                            <param id="0" name="Name">&quot;kembali&quot;</param>
+                            <param id="1" name="Parameter {n}">kembali.UID</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="597877805368465">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="672817381093639" type="gambaricon">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="120322306190393" type="gambaricon">
+                                    <param id="0" name="Frame number">Self.AnimationFrameCount-1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="715587818023451">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="753859145590734" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="232349911028753" type="gambaricon">
+                                    <param id="0" name="Frame number">Self.AnimationFrame-1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="474219767149450">
+                            <conditions />
+                            <actions>
+                                <action id="-9" name="Set value" sid="396193355665163" type="System">
+                                    <param id="0" name="Variable">IDlevel</param>
+                                    <param id="1" name="Value">gambaricon.AnimationFrame</param>
+                                </action>
+                                <action id="0" name="Call function" sid="843202234551340" type="Function">
+                                    <param id="0" name="Name">&quot;SuaraIcon&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="546506777778758">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="716691550915128" type="kembali">
+                            <param id="0" name="Unique ID">118</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="788244205949919" type="Function">
+                            <param id="0" name="Name">&quot;kembali&quot;</param>
+                            <param id="1" name="Parameter {n}">kembali.UID</param>
+                        </action>
+                        <action id="0" name="Call function" sid="823615796463584" type="Function">
+                            <param id="0" name="Name">&quot;transisi&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;keluar&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="747358860381801" type="System">
+                            <param id="0" name="Seconds">transisi.LiteTween.Duration</param>
+                        </action>
+                        <action id="1" name="Close" sid="856524542427396" type="Browser" />
+                    </actions>
+                </event-block>
+                <comment>SELANJUTNYA</comment>
+                <event-block sid="786643856342954">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="245881888865253" type="kembali">
+                            <param id="0" name="Unique ID">179</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="769164076146933" type="Function">
+                            <param id="0" name="Name">&quot;kembali&quot;</param>
+                            <param id="1" name="Parameter {n}">kembali.UID</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="649781996955858">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="410767250042848" type="gambaricon">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">Self.AnimationFrameCount-1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="732561553115748" type="gambaricon">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="248848923043784">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="294832457793378" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="322938022853099" type="gambaricon">
+                                    <param id="0" name="Frame number">Self.AnimationFrame+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="257770744334595">
+                            <conditions />
+                            <actions>
+                                <action id="-9" name="Set value" sid="226143581514172" type="System">
+                                    <param id="0" name="Variable">IDlevel</param>
+                                    <param id="1" name="Value">gambaricon.AnimationFrame</param>
+                                </action>
+                                <action id="0" name="Call function" sid="738861703560895" type="Function">
+                                    <param id="0" name="Name">&quot;SuaraIcon&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="250218987463212">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="751286594164700" type="kembali">
+                            <param id="0" name="Unique ID">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="524172683408838" type="Function">
+                            <param id="0" name="Name">&quot;kembali&quot;</param>
+                            <param id="1" name="Parameter {n}">kembali.UID</param>
+                        </action>
+                        <action id="0" name="Call function" sid="112780530830152" type="Function">
+                            <param id="0" name="Name">&quot;transisi&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;keluar&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="480445527733263" type="System">
+                            <param id="0" name="Seconds">transisi.LiteTween.Duration</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="182486909855787" type="System">
+                            <param id="0" name="Layout">MainMenu</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="251931914148485">
+            <conditions>
+                <condition id="-14" name="Pick by unique ID" sid="413616582141217" type="SpriteFont">
+                    <param id="0" name="Unique ID">185</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="735007279437894">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="746969691070275" type="gambaricon">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="579688591041013" type="SpriteFont">
+                            <param id="0" name="Text">&quot;PURE&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="653901653336548">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="168302382759993" type="gambaricon">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="768460722032600" type="SpriteFont">
+                            <param id="0" name="Text">&quot;JAKARTA&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="412509955404463">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="315494787521944" type="gambaricon">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="980360691382589" type="SpriteFont">
+                            <param id="0" name="Text">&quot;JAM GADANG&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="414017952885832">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="647392689968979" type="gambaricon">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="330250842854195" type="SpriteFont">
+                            <param id="0" name="Text">&quot;AMPERA&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="819723850491753">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="628734975349922" type="gambaricon">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="171370657399159" type="SpriteFont">
+                            <param id="0" name="Text">&quot;BOROBUDUR&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="632921562432238">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="207565079098556" type="gambaricon">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="291470647783210" type="SpriteFont">
+                            <param id="0" name="Text">&quot;SIGER&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="336299812053570">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="441990106558116" type="gambaricon">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="611041226449123" type="SpriteFont">
+                            <param id="0" name="Text">&quot;GEDUNG SATE&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="868444641145622">
+            <conditions>
+                <condition id="-14" name="Pick by unique ID" sid="150849957857468" type="SpriteFont">
+                    <param id="0" name="Unique ID">184</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="607091728881969" type="SpriteFont">
+                    <param id="0" name="Text">gambaricon.AnimationFrame+1&amp;&quot; / 7&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="337242465062526">
+            <conditions>
+                <condition id="3" name="On touched object" sid="721125143452921" type="Touch">
+                    <param id="0" name="Object">gambaricon</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="788909290314357" type="System">
+                    <param id="0" name="Variable">IDlevel</param>
+                    <param id="1" name="Value">gambaricon.AnimationFrame</param>
+                </action>
+                <action id="0" name="Call function" sid="982731846394076" type="Function">
+                    <param id="0" name="Name">&quot;SuaraIcon&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="406341879223792" type="System">
+                    <param id="0" name="Variable">IDlevel</param>
+                    <param id="1" name="Value">gambaricon.AnimationFrame</param>
+                </action>
+                <action id="0" name="Call function" sid="643928735758086" type="Function">
+                    <param id="0" name="Name">&quot;SuaraIcon&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+            <sub-events>
+                <comment>SEBELUMNYA</comment>
+            </sub-events>
+        </event-block>
+        <event-block sid="528077776361799">
+            <conditions>
+                <condition id="0" name="On function" sid="759257926186401" type="Function">
+                    <param id="0" name="Name">&quot;SuaraIcon&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="252768892242357">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="392603040304623" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="305221340999878" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;pure bali&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="387883804654406">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="229493526750840" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="106227848847000" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;monas jakarta&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="985361952369897">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="695331739462797" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="142486489952941" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;jam gadang padang&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="668364356343474">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="911452782011894" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="604355004603339" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;ampera palembang&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="317084295283615">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="422289971049690" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="412305044898798" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;borobudur jateng&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="593794375764049">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="451685566317221" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="116902554277887" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;siger lampung&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="797227375819915">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="520833667952941" type="System">
+                            <param id="0" name="Variable">IDlevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="763479703021970" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;gedugn sate bandung&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
